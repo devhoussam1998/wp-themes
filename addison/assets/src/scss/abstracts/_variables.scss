@@ -1,0 +1,196 @@
+//
+// --------------------------------------------------------------------------
+// Variables.
+// --------------------------------------------------------------------------
+// 
+// @package     Addison
+// @author      Unixcreativity
+// @copyright   Copyright (c) 2023, Unixcreativity
+// @link        https://themeforest.net/user/unixcreativity
+// @since       Addison v1.0.0
+//
+//
+
+//
+// Import "Custom Variables".
+//
+
+@import "custom-variables";
+
+//
+// Color Systems.
+//
+
+$white: #fff !default;
+$dark: #212529 !default;
+
+//
+// Light Mode.
+//
+
+$primary: #6610f2 !default;
+$primary-text: #3d0a91 !default;
+$primary-bg-subtle: #e0cffc !default;
+$primary-border-subtle: #c29ffa !default;
+
+//
+// Dark Mode.
+//
+
+$primary-text-dark: #a370f7 !default;
+$primary-bg-subtle-dark: #140330 !default;
+$primary-border-subtle-dark: #3d0a91 !default;
+
+//
+// Prefix for :root CSS Variables.
+//
+
+$prefix: bs- !default;
+
+//
+// Links.
+//
+
+$link-decoration: none !default;
+
+//
+// Light Mode.
+//
+
+$link-color: $dark !default;
+$link-hover-color: $primary !default;
+
+//
+// Dark Mode.
+//
+
+$link-color-dark: #a370f7 !default;
+$link-hover-color-dark: #c29ffa !default;
+
+//
+// Paragraphs.
+//
+
+$paragraph-margin-bottom: 0 !default;
+
+//
+// Typography.
+//
+
+$font-family-base: "Roboto", sans-serif !default;
+
+$headings-margin-bottom: 0 !default;
+
+//
+// Content Grouping.
+//
+
+$hr-color: var(--#{$prefix}border-color) !default;
+$hr-opacity: 1 !default;
+
+//
+// Buttons.
+//
+
+$btn-box-shadow: none !default;
+$btn-focus-box-shadow: none !default;
+
+$btn-active-border-color: transparent !default;
+$btn-active-box-shadow: none !default;
+
+//
+// Link Buttons.
+//
+
+$btn-link-focus-shadow-rgb: none !default;
+
+//
+// Navbar.
+//
+
+$navbar-brand-padding-y: 0 !default;
+$navbar-brand-margin-end: 0 !default;
+
+$navbar-toggler-focus-width: 0 !default;
+
+//
+// Navbar Light.
+//
+
+$navbar-light-color: var(--#{$prefix}emphasis-color) !default;
+$navbar-light-hover-color: var(--#{$prefix}primary) !default;
+$navbar-light-active-color: var(--#{$prefix}primary) !default;
+
+$navbar-light-toggler-background-color: var(--#{$prefix}primary) !default;
+$navbar-light-toggler-hover-background-color: transparent !default;
+
+$navbar-light-toggler-border-width: 0.125rem !default; // 2px
+$navbar-light-toggler-border-style: solid !default;
+$navbar-light-toggler-border-color: var(--#{$prefix}primary) !default;
+$navbar-light-toggler-hover-border-color: var(--#{$prefix}primary) !default;
+
+$navbar-light-icon-color: rgba($white, 1) !default;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+
+$navbar-light-icon-hover-color: rgba($primary, 1) !default;
+$navbar-light-toggler-hover-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-icon-hover-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+
+$navbar-light-brand-color: var(--#{$prefix}emphasis-color) !default;
+
+//
+// Navbar Dark.
+//
+
+$navbar-dark-color: var(--#{$prefix}white) !default;
+$navbar-dark-hover-color: var(--#{$prefix}primary) !default;
+$navbar-dark-active-color: var(--#{$prefix}primary) !default;
+
+$navbar-dark-toggler-background-color: var(--#{$prefix}primary) !default;
+$navbar-dark-toggler-hover-background-color: transparent !default;
+
+$navbar-dark-toggler-border-width: 0.125rem !default; // 2px
+$navbar-dark-toggler-border-style: solid !default;
+$navbar-dark-toggler-border-color: var(--#{$prefix}primary) !default;
+$navbar-dark-toggler-hover-border-color: var(--#{$prefix}primary) !default;
+
+$navbar-dark-icon-color: rgba($white, 1) !default;
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+
+$navbar-dark-icon-hover-color: rgba($primary, 1) !default;
+$navbar-dark-toggler-hover-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-icon-hover-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+
+$navbar-dark-brand-color: var(--#{$prefix}white) !default;
+
+//
+// Alerts.
+//
+
+$alert-margin-bottom: 0 !default;
+$alert-border-radius: 0 !default;
+
+//
+// Close.
+//
+
+$btn-close-focus-shadow: none !default;
+$btn-close-opacity: 1 !default;
+
+//
+// Offcanvas.
+//
+
+$offcanvas-vertical-height: 50vh !default;
+
+$offcanvas-header-padding-y: 1rem !default; // 16px
+$offcanvas-header-padding-x: 1rem !default; // 16px
+
+$offcanvas-header-border-bottom-width: 0.0625rem !default; // 1px
+$offcanvas-header-border-bottom-style: solid !default;
+$offcanvas-header-border-bottom-color: var(--#{$prefix}border-color) !default;
+
+$offcanvas-footer-padding-y: 1rem !default; // 16px
+$offcanvas-footer-padding-x: 1rem !default; // 16px
+
+$offcanvas-footer-border-top-width: 0.0625rem !default; // 1px
+$offcanvas-footer-border-top-style: solid !default;
+$offcanvas-footer-border-top-color: var(--#{$prefix}border-color) !default;

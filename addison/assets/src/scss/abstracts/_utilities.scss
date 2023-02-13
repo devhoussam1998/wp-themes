@@ -1,0 +1,45 @@
+//
+// --------------------------------------------------------------------------
+// Utilities.
+// --------------------------------------------------------------------------
+// 
+// @package     Addison
+// @author      Unixcreativity
+// @copyright   Copyright (c) 2023, Unixcreativity
+// @link        https://themeforest.net/user/unixcreativity
+// @since       Addison v1.0.0
+//
+//
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "z-index": map-merge(
+      map-get($utilities, "z-index"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "z-index"), "values"),
+          (max: 99999),
+        ),
+      ),
+    ),
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (11: 2.75rem),
+        ),
+      ),
+    ),
+    "height": map-merge(
+      map-get($utilities, "height"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "height"), "values"),
+          (11: 2.75rem),
+        ),
+      ),
+    ),
+  )
+);

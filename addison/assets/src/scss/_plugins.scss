@@ -1,0 +1,123 @@
+//
+// --------------------------------------------------------------------------
+// Plugins.
+// --------------------------------------------------------------------------
+// 
+// @package     Addison
+// @author      Unixcreativity
+// @copyright   Copyright (c) 2023, Unixcreativity
+// @link        https://themeforest.net/user/unixcreativity
+// @since       Addison v1.0.0
+//
+//
+
+//
+// Import "Bootstrap Functions".
+//
+
+@import "~bootstrap/scss/functions";
+
+//
+// Import "Variables".
+//
+
+@import "abstracts/variables";
+
+//
+// Import "Bootstrap Variables".
+//
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";
+
+//
+// Import "Bootstrap Configuration".
+//
+
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+//
+// Import "Utilities".
+//
+
+@import "abstracts/utilities";
+
+//
+// Import "Bootstrap Layout & Components".
+//
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/offcanvas";
+@import "~bootstrap/scss/placeholders";
+
+//
+// Import "Bootstrap Helpers".
+//
+
+@import "~bootstrap/scss/helpers";
+
+//
+// Import "Bootstrap Utilities".
+//
+
+@import "~bootstrap/scss/utilities/api";
+
+//
+// Import "Bootstrap Icons".
+//
+
+$bootstrap-icons-font-dir: "../fonts" !default;
+@import "~bootstrap-icons/font/bootstrap-icons";
+
+//
+// Import "Font Awesome".
+//
+
+$fa-font-path: "../fonts" !default;
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+//
+// Import "Unicons".
+//
+
+@import "~@iconscout/unicons/css/line.css";
+
+//
+// Import "flag-icons".
+//
+
+// $flag-icons-path: "../fonts/flags" !default;
+// @import "~flag-icons/sass/flag-icons";

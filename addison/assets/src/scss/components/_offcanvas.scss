@@ -1,0 +1,57 @@
+//
+// --------------------------------------------------------------------------
+// Offcanvas.
+// --------------------------------------------------------------------------
+// 
+// @package     Addison
+// @author      Unixcreativity
+// @copyright   Copyright (c) 2023, Unixcreativity
+// @link        https://themeforest.net/user/unixcreativity
+// @since       Addison v1.0.0
+//
+//
+
+//
+// Base Styles.
+//
+
+%offcanvas-css-vars {
+  --#{$prefix}offcanvas-header-padding-x: #{$offcanvas-header-padding-x};
+  --#{$prefix}offcanvas-header-padding-y: #{$offcanvas-header-padding-y};
+
+  --#{$prefix}offcanvas-header-border-bottom-width: #{$offcanvas-header-border-bottom-width};
+  --#{$prefix}offcanvas-header-border-bottom-style: #{$offcanvas-header-border-bottom-style};
+  --#{$prefix}offcanvas-header-border-bottom-color: #{$offcanvas-header-border-bottom-color};
+
+  --#{$prefix}offcanvas-footer-padding-x: #{$offcanvas-footer-padding-x};
+  --#{$prefix}offcanvas-footer-padding-y: #{$offcanvas-footer-padding-y};
+
+  --#{$prefix}offcanvas-footer-border-top-width: #{$offcanvas-footer-border-top-width};
+  --#{$prefix}offcanvas-footer-border-top-style: #{$offcanvas-footer-border-top-style};
+  --#{$prefix}offcanvas-footer-border-top-color: #{$offcanvas-footer-border-top-color};
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $next: breakpoint-next($breakpoint, $grid-breakpoints);
+  $infix: breakpoint-infix($next, $grid-breakpoints);
+
+  .offcanvas#{$infix} {
+      @extend %offcanvas-css-vars;
+  }
+}
+
+.offcanvas-header {
+  padding: var(--#{$prefix}offcanvas-header-padding-x)
+      var(--#{$prefix}offcanvas-header-padding-y);
+  border-bottom: var(--#{$prefix}offcanvas-header-border-bottom-width)
+      var(--#{$prefix}offcanvas-header-border-bottom-style)
+      var(--#{$prefix}offcanvas-header-border-bottom-color);
+}
+
+.offcanvas-footer {
+  padding: var(--#{$prefix}offcanvas-footer-padding-x)
+      var(--#{$prefix}offcanvas-footer-padding-y);
+  border-top: var(--#{$prefix}offcanvas-footer-border-top-width)
+      var(--#{$prefix}offcanvas-footer-border-top-style)
+      var(--#{$prefix}offcanvas-footer-border-top-color);
+}

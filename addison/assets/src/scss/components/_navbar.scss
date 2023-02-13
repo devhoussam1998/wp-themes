@@ -1,0 +1,79 @@
+//
+// --------------------------------------------------------------------------
+// Navbar.
+// --------------------------------------------------------------------------
+// 
+// @package     Addison
+// @author      Unixcreativity
+// @copyright   Copyright (c) 2023, Unixcreativity
+// @link        https://themeforest.net/user/unixcreativity
+// @since       Addison v1.0.0
+//
+//
+
+//
+// Base Styles.
+//
+
+.navbar {
+  --#{$prefix}navbar-toggler-background-color: #{$navbar-light-toggler-background-color};
+  --#{$prefix}navbar-toggler-border-width: #{$navbar-light-toggler-border-width};
+  --#{$prefix}navbar-toggler-border-style: #{$navbar-light-toggler-border-style};
+  --#{$prefix}navbar-toggler-border-color: #{$navbar-light-toggler-border-color};
+  --#{$prefix}navbar-toggler-hover-background-color: #{$navbar-light-toggler-hover-background-color};
+  --#{$prefix}navbar-toggler-hover-border-color: #{$navbar-light-toggler-hover-border-color};
+  --#{$prefix}navbar-toggler-hover-icon-bg: #{escape-svg(
+          $navbar-light-toggler-hover-icon-bg
+      )};
+}
+
+//
+// Responsive Navbar.
+//
+
+.navbar-toggler {
+  background-color: var(--#{$prefix}navbar-toggler-background-color);
+  border: var(--#{$prefix}navbar-toggler-border-width) var(--#{$prefix}navbar-toggler-border-style) var(--#{$prefix}navbar-toggler-border-color);
+  &:hover {
+      background-color: var(
+          --#{$prefix}navbar-toggler-hover-background-color
+      );
+      border-color: var(--#{$prefix}navbar-toggler-hover-border-color);
+      .navbar-toggler-icon {
+          background-image: var(--#{$prefix}navbar-toggler-hover-icon-bg);
+      }
+  }
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+      $next: breakpoint-next($breakpoint, $grid-breakpoints);
+      $infix: breakpoint-infix($next, $grid-breakpoints);
+
+      &#{$infix} {
+          @include media-breakpoint-up($next) {
+              .offcanvas {
+                  .offcanvas-footer {
+                      display: none;
+                  }
+              }
+          }
+      }
+  }
+}
+
+//
+// Navbar Themes.
+//
+
+.navbar-dark {
+  --#{$prefix}navbar-toggler-background-color: #{$navbar-dark-toggler-background-color};
+  --#{$prefix}navbar-toggler-border-width: #{$navbar-dark-toggler-border-width};
+  --#{$prefix}navbar-toggler-border-style: #{$navbar-dark-toggler-border-style};
+  --#{$prefix}navbar-toggler-border-color: #{$navbar-dark-toggler-border-color};
+  --#{$prefix}navbar-toggler-hover-background-color: #{$navbar-dark-toggler-hover-background-color};
+  --#{$prefix}navbar-toggler-hover-border-color: #{$navbar-dark-toggler-hover-border-color};
+  --#{$prefix}navbar-toggler-hover-icon-bg: #{escape-svg(
+          $navbar-dark-toggler-hover-icon-bg
+      )};
+}

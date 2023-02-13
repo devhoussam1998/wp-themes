@@ -1,0 +1,20 @@
+//
+// --------------------------------------------------------------------------
+// Buttons.
+// --------------------------------------------------------------------------
+// 
+// @package     Addison
+// @author      Unixcreativity
+// @copyright   Copyright (c) 2023, Unixcreativity
+// @link        https://themeforest.net/user/unixcreativity
+// @since       Addison v1.0.0
+//
+//
+
+//
+// Base Styles.
+//
+
+.btn {
+  --#{$prefix}btn-active-border-color: #{$btn-active-border-color};
+}

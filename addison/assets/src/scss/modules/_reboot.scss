@@ -1,0 +1,39 @@
+//
+// --------------------------------------------------------------------------
+// Reboot.
+// --------------------------------------------------------------------------
+// 
+// @package     Addison
+// @author      Unixcreativity
+// @copyright   Copyright (c) 2023, Unixcreativity
+// @link        https://themeforest.net/user/unixcreativity
+// @since       Addison v1.0.0
+//
+//
+
+//
+// Lists.
+//
+
+ol,
+ul,
+dl {
+  margin-bottom: 0;
+}
+
+//
+// Buttons.
+//
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+//
+// Vertical Rule.
+//
+
+.vr {
+  background-color: $hr-color;
+}
